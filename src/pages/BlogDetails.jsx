@@ -30,7 +30,7 @@ const BlogDetails = () => {
   const [showComments, setShowComments] = useState(false);
 
   const handleLike = (id) => {
-    setLikeCount(likeCount + 1);
+    setLikeCount((prev) => prev + 1);
     likeButton(id);
   };
 
