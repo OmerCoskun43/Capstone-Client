@@ -29,9 +29,9 @@ const BlogDetails = () => {
   const [commentCount, setCommentCount] = useState(0);
   const [showComments, setShowComments] = useState(false);
 
-  const handleLike = (id) => {
+  const handleLike = async (id) => {
+    await likeButton(id);
     setLikeCount((prev) => prev + 1);
-    likeButton(id);
   };
 
   useEffect(() => {
