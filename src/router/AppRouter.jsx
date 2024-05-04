@@ -10,6 +10,7 @@ import MyBlogs from "../pages/MyBlogs";
 import CreateBlog from "../components/CreateBlog";
 
 import { NavbarDefault } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 const AppRouter = () => {
   return (
@@ -35,6 +36,7 @@ const AppRouter = () => {
           <Route path="" element={<CreateBlog />} />
         </Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
